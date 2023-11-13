@@ -42,9 +42,11 @@ Here, GRL3 corresponds to SS in our paper.
 
 ## Graph Format
 
-The input graph should be in "binary" format by default. In folder "datatsets", there is an example bipartitie graph bi_github.bin. Here, edgelist2binary is the executable to transform a "txt" graph into our binary form. 
+The input graph should be in "binary" format by default. In folder "datatsets", there is an example bipartitie graph bi_github. Here, edgelist2binary is the executable to transform a "txt" graph into our binary form. 
 
-Our algorithms also support "txt" graph, the txt version should be in the following format:
+Our algorithms also support "txt" graph. This needs to comment the function "load_graph_binary" and uncomment the function "load_graph" in main.cpp. 
+
+The txt version should be in the following format:
 
 number of L side vertices \t number of R side vertices \t number of edges \n
 
